@@ -17,6 +17,16 @@ export const add = (a, b) => {
 };
 
 export const subtract = (a, b) => {
+    if(Array.isArray(a)){
+        a = a.reduce((a, b) => {
+            return a - b;
+        })
+    }
+    if(Array.isArray(b)){
+        b = b.reduce((a, b) => {
+            return a - b;
+        })
+    }
     return a - b;
 };
 

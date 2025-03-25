@@ -29,6 +29,10 @@ describe('subtract', () => {
     it("should subtract two negative numbers", () => {
         expect(subtract(-1, -2)).toBe(1);
     });
+    it("should accept an array input", () =>{
+        expect(subtract([1, 2], [3, 4])).toBe(0);
+        expect(subtract([1, 2], 3)).toBe(-4);
+    })
     
 });
 
