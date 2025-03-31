@@ -27,6 +27,7 @@ export const Counter = () => {
             Increment
           </button>
           <button
+            data-testid="counter-decrement"
             onClick={() => dispatch({ type: 'decrement' })}
             disabled={state.count === 0}
           >
