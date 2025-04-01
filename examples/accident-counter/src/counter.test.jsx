@@ -53,7 +53,7 @@ describe('Counter ', () => {
     const incrementButton = screen.getByRole('button', {
       name: /increment/i,
     })
-
+  
     await userEvent.click(incrementButton);
     expect(unit.textContent).toBe('day'); 
    });
