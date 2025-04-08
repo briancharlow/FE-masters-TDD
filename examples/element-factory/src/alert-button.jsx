@@ -13,8 +13,9 @@ export const AlertButton = ({}) => {
           onChange={(event) => setMessage(event.target.value)}
         />
       </label>
-
       <button onClick={() => alert(message)}>Trigger Alert</button>
     </div>
   );
 };
+
+
